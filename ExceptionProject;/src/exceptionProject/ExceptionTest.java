@@ -4,12 +4,12 @@ public class ExceptionTest {
 
 	public static void main(String[] args) {
 
-		// ¿¹¿ÜÃ³¸®: ½ÇÇà ½Ã ÄÚµå»ó¿¡¼­ °³¹ßÀÚ°¡ ÀÎÁöÇÒ ¼ö ÀÖ´Â ¹®Á¦Á¡À» ÇØ°áÇÏ´Â °Í
+		// ì˜ˆì™¸ì²˜ë¦¬: ì‹¤í–‰ ì‹œ ì½”ë“œìƒì—ì„œ ê°œë°œìê°€ ì¸ì§€í•  ìˆ˜ ìˆëŠ” ë¬¸ì œì ì„ í•´ê²°í•˜ëŠ” ê²ƒ
 
 //		try {
-//			½ÇÇà¹®; // ¿¹¿Ü¸¦ ¹ß»ı½ÃÅ³ ¼ö ÀÖ´Â ±¸¹®
-//		} catch(¿¹¿ÜÅ¸ÀÔ) {
-//			¿¹¿Ü Ã³¸® ±¸¹®
+//			ì‹¤í–‰ë¬¸; // ì˜ˆì™¸ë¥¼ ë°œìƒì‹œí‚¬ ìˆ˜ ìˆëŠ” êµ¬ë¬¸
+//		} catch(ì˜ˆì™¸íƒ€ì…) {
+//			ì˜ˆì™¸ ì²˜ë¦¬ êµ¬ë¬¸
 //		}
 
 		//Exception
@@ -18,9 +18,9 @@ public class ExceptionTest {
 //			try {
 //				int r = (int) (Math.random() * 10); // 0~9
 //				System.out.println(r);
-//				int result = 10 / r;          // Á¡¼ö¸¦ 0À¸·Î ³ª´­ ¼ö ¾ø´Ù.¿¹¿Ü¹ß»ı
+//				int result = 10 / r;          // ì ìˆ˜ë¥¼ 0ìœ¼ë¡œ ë‚˜ëˆŒ ìˆ˜ ì—†ë‹¤.ì˜ˆì™¸ë°œìƒ
 //			} catch (ArithmeticException e) {
-//				System.out.println("0À¸·Î ³ª´©¾î¼­ ¿¹¿Ü¸¦ °­Á¦·Î Ã³¸®Çß½À´Ï´Ù.");
+//				System.out.println("0ìœ¼ë¡œ ë‚˜ëˆ„ì–´ì„œ ì˜ˆì™¸ë¥¼ ê°•ì œë¡œ ì²˜ë¦¬í–ˆìŠµë‹ˆë‹¤.");
 //			}
 //		}
 
@@ -34,22 +34,22 @@ public class ExceptionTest {
 //			arr[5] = 10;
 //			   
 //		}catch(ArithmeticException e) {
-//			System.out.println("0À¸·Î ³ª´©¾î¼­ ¿¹¿Ü¸¦ °­Á¦·Î Ã³¸®Çß½À´Ï´Ù.");
+//			System.out.println("0ìœ¼ë¡œ ë‚˜ëˆ„ì–´ì„œ ì˜ˆì™¸ë¥¼ ê°•ì œë¡œ ì²˜ë¦¬í–ˆìŠµë‹ˆë‹¤.");
 //		}catch(ArrayIndexOutOfBoundsException e) {
-//			System.out.println("index number ¿À·ù");
-//			   // ¦£ ¿¹¿Ü ÃÖ»óÀ§ Å¸ÀÔ	
+//			System.out.println("index number ì˜¤ë¥˜");
+//			   // â”Œ ì˜ˆì™¸ ìµœìƒìœ„ íƒ€ì…	
 //		}catch(Exception e) {
-//			System.out.println("¸ğµç¿¹¿Ü Ã³¸®");
+//			System.out.println("ëª¨ë“ ì˜ˆì™¸ ì²˜ë¦¬");
 //		}finally {
-//			//¿¹¿Ü¹ß»ı À¯¹«¿Í »ó°ü¾÷ÀÌ ½ÇÇàÇÏ´Â ±¸¹®
-//			System.out.println("¿¹¿Ü¹ß»ı À¯¹«¿Í »ó°ü¾÷ÀÌ ½ÇÇàÇÏ´Â ±¸¹®");
+//			//ì˜ˆì™¸ë°œìƒ ìœ ë¬´ì™€ ìƒê´€ì—…ì´ ì‹¤í–‰í•˜ëŠ” êµ¬ë¬¸
+//			System.out.println("ì˜ˆì™¸ë°œìƒ ìœ ë¬´ì™€ ìƒê´€ì—…ì´ ì‹¤í–‰í•˜ëŠ” êµ¬ë¬¸");
 //		}
 //	
 //		arr[3] = 10;
 //		System.out.println(arr[3]);
 //
 //		try {
-//			throw new Exception("°íÀÇ·Î ¿¹¿Ü ¹ß»ı"); //¿¹¿Ü ´øÁö±â
+//			throw new Exception("ê³ ì˜ë¡œ ì˜ˆì™¸ ë°œìƒ"); //ì˜ˆì™¸ ë˜ì§€ê¸°
 //		} catch (Exception e) {
 //			System.out.println(e.getMessage());
 //			e.printStackTrace();
@@ -57,9 +57,9 @@ public class ExceptionTest {
 
 		add();
 
-		//catch¹® Å¸ÀÔ
-		//throw¿¡¼­ °­Á¦¿¹¿Ü
-		//throw¿¡¼­ ¿¹¿Ü ¼±¾ğ
+		//catchë¬¸ íƒ€ì…
+		//throwì—ì„œ ê°•ì œì˜ˆì™¸
+		//throwì—ì„œ ì˜ˆì™¸ ì„ ì–¸
 		
 		try {
 			sub();
@@ -71,13 +71,13 @@ public class ExceptionTest {
 
 	static void add() {
 		try {
-			throw new Exception("add() ¿¹¿Ü¹ß»ı");
+			throw new Exception("add() ì˜ˆì™¸ë°œìƒ");
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 	} //add() end
 	
-	static void sub() throws ArithmeticException { //¿¹¿Ü ¼±¾ğÇÏ±â
-		throw new ArithmeticException("sub() ¿¹¿Ü¹ß»ı");
+	static void sub() throws ArithmeticException { //ì˜ˆì™¸ ì„ ì–¸í•˜ê¸°
+		throw new ArithmeticException("sub() ì˜ˆì™¸ë°œìƒ");
 	}
 }

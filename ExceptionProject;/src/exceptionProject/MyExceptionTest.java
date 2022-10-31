@@ -4,7 +4,7 @@ public class MyExceptionTest {
 
 	public static void main(String[] args) {
 		try {
-			throw new MyException("MyException »ç¿ëÀÚ Á¤ÀÇ ¿¹¿Ü ¹ß»ı");
+			throw new MyException("MyException ì‚¬ìš©ì ì •ì˜ ì˜ˆì™¸ ë°œìƒ");
 		}catch(MyException e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();

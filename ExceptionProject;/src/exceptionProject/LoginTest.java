@@ -10,32 +10,32 @@ public class LoginTest {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("ID ÀÔ·Â: ");
+		System.out.println("ID ìž…ë ¥: ");
 		id = sc.next();
-		System.out.println("password ÀÔ·Â: ");
+		System.out.println("password ìž…ë ¥: ");
 		password = sc.nextInt();
 
-		if (!id.equals("tis")) { //¹®ÀÚ¿­ ºñ±³ ½Ã equals() »ç¿ë   // ==, != <-ÀÌ°Ç ÁÖ¼Ò°ª ºñ±³
-			// ¿¹¿ÜÃ³¸®
-			// ID°¡ ºÒÀÏÄ¡ÇÕ´Ï´Ù.
+		if (!id.equals("tis")) { //ë¬¸ìžì—´ ë¹„êµ ì‹œ equals() ì‚¬ìš©   // ==, != <-ì´ê±´ ì£¼ì†Œê°’ ë¹„êµ
+			// ì˜ˆì™¸ì²˜ë¦¬
+			// IDê°€ ë¶ˆì¼ì¹˜í•©ë‹ˆë‹¤.
 			try {
-				throw new LoginIdException("ID°¡ ºÒÀÏÄ¡ÇÕ´Ï´Ù.");
+				throw new LoginIdException("IDê°€ ë¶ˆì¼ì¹˜í•©ë‹ˆë‹¤.");
 			} catch (LoginIdException e) {
-				System.out.println("iD¸¦ ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("iDë¥¼ ë‹¤ì‹œ ìž…ë ¥í•˜ì„¸ìš”");
 			}
 		}
 		
 		if (password != 1234) {
 			try {
-				throw new LoginPwException("password°¡ ºÒÀÏÄ¡ÇÕ´Ï´Ù.");
+				throw new LoginPwException("passwordê°€ ë¶ˆì¼ì¹˜í•©ë‹ˆë‹¤.");
 			} catch (LoginPwException e) {
 				//e.printStackTrace();
-				System.out.println("password¸¦ ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("passwordë¥¼ ë‹¤ì‹œ ìž…ë ¥í•˜ì„¸ìš”");
 			}
 		}
 
 		if (id.equals("tis") && password == 1234) {
-			System.out.println("·Î±×ÀÎ ¼º°ø");
+			System.out.println("ë¡œê·¸ì¸ ì„±ê³µ");
 		}
 	}
 

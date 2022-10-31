@@ -12,7 +12,7 @@ public class Person {
 
 	
 	@Override
-	public boolean equals(Object obj) { //¸â¹öº¯¼öÀÇ °ªÀÌ °°ÀºÁö ºñ±³ÇÏ´Â ¸Þ¼Òµå
+	public boolean equals(Object obj) { //ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ì´ ê°™ì€ì§€ ë¹„êµí•˜ëŠ” ë©”ì†Œë“œ
 		if(obj instanceof Person) {
 			Person another = (Person)obj;
 			return this.name.equals(another.name) && this.age == another.age;
@@ -23,10 +23,10 @@ public class Person {
 
 
 	@Override
-	public int hashCode() { // ÇØ½¬ÄÚµå¸¦ µ¿ÀÏÇÏ°Ô ¸¸µå´Â ¿À¹ö¶óÀÌÂ¡
+	public int hashCode() { // í•´ì‰¬ì½”ë“œë¥¼ ë™ì¼í•˜ê²Œ ë§Œë“œëŠ” ì˜¤ë²„ë¼ì´ì§•
 		
-		return (this.name + age).hashCode(); // "È«±æµ¿10".hashCode()  => °°Àº ¹®ÀÚ¿­ = °°Àº ÇØ½¬ÄÚµå
-	}         //ÇØ´ç ¹®ÀÚ¿­ÀÌ¸é µ¿ÀÏÇÑ ¹®ÀÚ¿­ÀÏ °æ¿ì  µ¿ÀÏÇÑ ÇØ½¬ÄÚµå¸¦  ¸®ÅÏ
+		return (this.name + age).hashCode(); // "í™ê¸¸ë™10".hashCode()  => ê°™ì€ ë¬¸ìžì—´ = ê°™ì€ í•´ì‰¬ì½”ë“œ
+	}         //í•´ë‹¹ ë¬¸ìžì—´ì´ë©´ ë™ì¼í•œ ë¬¸ìžì—´ì¼ ê²½ìš°  ë™ì¼í•œ í•´ì‰¬ì½”ë“œë¥¼  ë¦¬í„´
 
 	@Override
 	public String toString() {

@@ -12,49 +12,49 @@ public class StringTest {
 		
 		
 		
-//		String str1 = "abc"; //´ëºÎºĞ ÀÌ·± ¹æ½ÄÀ» ¾¸                            
-//		String str2 = "abc"; //°°Àº °ªÀ» °¡Áø ¹®ÀÚ¿­ÀÇ ÁÖ¼ÒÀ» ¹ŞÀ½
+//		String str1 = "abc"; //ëŒ€ë¶€ë¶„ ì´ëŸ° ë°©ì‹ì„ ì”€                            
+//		String str2 = "abc"; //ê°™ì€ ê°’ì„ ê°€ì§„ ë¬¸ìì—´ì˜ ì£¼ì†Œì„ ë°›ìŒ
 		   
 		
 //		String str1 = "abc";                           
 //		String str2 = "def"; 
-//		   //   ¦¦º¯¼öµéÀÌ ¹Ş´Â °ÍÀº ÁÖ¼Ò°ªÀÌ´Ù
-//		str1 = str1 + str2; // "abcdef" // »õ·Î¿î ÁÖ¼ÒÀÇ µ¥ÀÌÅÍ°¡ »ı±â°í str1Àº »õ·Î¿î ÁÖ¼Ò¿¡ ÇÒ´çµÇ¾î ÁÖ¼Ò°ªÀÌ º¯ÇÔ
+//		   //   â””ë³€ìˆ˜ë“¤ì´ ë°›ëŠ” ê²ƒì€ ì£¼ì†Œê°’ì´ë‹¤
+//		str1 = str1 + str2; // "abcdef" // ìƒˆë¡œìš´ ì£¼ì†Œì˜ ë°ì´í„°ê°€ ìƒê¸°ê³  str1ì€ ìƒˆë¡œìš´ ì£¼ì†Œì— í• ë‹¹ë˜ì–´ ì£¼ì†Œê°’ì´ ë³€í•¨
 //		
 //		System.out.println(str1.hashCode());
 //		System.out.println(str2.hashCode());
 //
 //		String str3 = new String("abc");
-//		String str4 = new String("abc"); // ¼­·Î ´Ù¸£ ÁÖ¼Ò·Î ´Ù¸¥ °ªÀ» ¹ŞÀ½.
+//		String str4 = new String("abc"); // ì„œë¡œ ë‹¤ë¥´ ì£¼ì†Œë¡œ ë‹¤ë¥¸ ê°’ì„ ë°›ìŒ.
 //
 //		
-//		if(str3.equals(str4)){ // => ¹®ÀÚ¿­À» ºñ±³  // "abc".equals("abc")µµ °¡´É
-//			//¹®ÀÚ¿­
-//			System.out.println("°°Àº ¹®ÀÚ¿­ÀÌ´Ù.");
-//		} else {System.out.println("´Ù¸¥ ¹®ÀÚ¿­ÀÌ´Ù");
+//		if(str3.equals(str4)){ // => ë¬¸ìì—´ì„ ë¹„êµ  // "abc".equals("abc")ë„ ê°€ëŠ¥
+//			//ë¬¸ìì—´
+//			System.out.println("ê°™ì€ ë¬¸ìì—´ì´ë‹¤.");
+//		} else {System.out.println("ë‹¤ë¥¸ ë¬¸ìì—´ì´ë‹¤");
 //		}
 //		
 //		
-//		if(str3 == str4){// => ÁÖ¼Ò°ªÀ» ºñ±³(ºñ±³¿¬»êÀÚ »ç¿ë ½Ã)
-//			//ÁÖ¼Ò°ª
-//			System.out.println("°°Àº ¹®ÀÚ¿­ÀÌ´Ù.");
-//		} else {System.out.println("´Ù¸¥ ¹®ÀÚ¿­ÀÌ´Ù");
+//		if(str3 == str4){// => ì£¼ì†Œê°’ì„ ë¹„êµ(ë¹„êµì—°ì‚°ì ì‚¬ìš© ì‹œ)
+//			//ì£¼ì†Œê°’
+//			System.out.println("ê°™ì€ ë¬¸ìì—´ì´ë‹¤.");
+//		} else {System.out.println("ë‹¤ë¥¸ ë¬¸ìì—´ì´ë‹¤");
 //		}
 		
 		
 //		int x = 10;
-//		String str = String.valueOf(x); // .valueOf(x);  => "10" ¼ıÀÚ¸¦ ¹®ÀÚ·Î ¹İÈ¯
+//		String str = String.valueOf(x); // .valueOf(x);  => "10" ìˆ«ìë¥¼ ë¬¸ìë¡œ ë°˜í™˜
 //    	System.out.println(str.charAt(0));  // 1
 		
 		
 //		String fileName = "Hello.java"; // Hello java
 //		              //   0123456789
 //		
-//		int index = fileName.indexOf('.'); // ³»°¡ ¾Ë°í½ÍÀº ¹®ÀÚ¸¦ ³ÖÀ¸¸é À§Ä¡°ª(ÀÎµ¦½º °ª)ÀÌ ¹İÈ¯  => 5
-//		System.out.println(index);             // ¦£ÀÎÀÚ(ÀÎµ¦½º)°ª -1±îÁöÀÇ ±ÛÀÚ±îÁö Ãâ·Â
+//		int index = fileName.indexOf('.'); // ë‚´ê°€ ì•Œê³ ì‹¶ì€ ë¬¸ìë¥¼ ë„£ìœ¼ë©´ ìœ„ì¹˜ê°’(ì¸ë±ìŠ¤ ê°’)ì´ ë°˜í™˜  => 5
+//		System.out.println(index);             // â”Œì¸ì(ì¸ë±ìŠ¤)ê°’ -1ê¹Œì§€ì˜ ê¸€ìê¹Œì§€ ì¶œë ¥
 //		System.out.println(fileName.substring(0,index)); // Hello
 //		System.out.println(fileName.substring(index + 1)); //java
-//		                                       // ¦¦¸¶Á÷¸· ±ÛÀÚ±îÁö Ãâ·ÂÇÏ°í½Í±â ¶§¹®¿¡ ÈÄ¹æ ÀÎÀÚ¸¦ Àû¾îÁÙ ÇÊ¿ä ¾øÀ½
+//		                                       // â””ë§ˆì§ë§‰ ê¸€ìê¹Œì§€ ì¶œë ¥í•˜ê³ ì‹¶ê¸° ë•Œë¬¸ì— í›„ë°© ì¸ìë¥¼ ì ì–´ì¤„ í•„ìš” ì—†ìŒ
 		
 		
 		
@@ -75,8 +75,8 @@ public class StringTest {
 //	System.out.println(str3);
 		
 		
-     //StringBuffer´Â ¹®ÀÚ¿­À» Ãß°¡ÇÏ°Å³ª º¯°æ ÇÒ ¶§ ÁÖ·Î »ç¿ëÇÏ´Â ÀÚ·áÇüÀÌ´Ù. (»õ·Î¿î µ¥ÀÌÅÍ¸¦ ¸¸µå´Â °ÍÀÌ ¾Æ´Ï¶ó ±âÁ¸ÀÇ µ¥ÀÌÅÍ¿¡ Ãß°¡ÇÏ´Â Çü½Ä)
-//		StringBuffer sb = new StringBuffer("abc"); // StringBuffer´Â »ı¼ºÀ» ÇØ¼­ »ç¿ë
+     //StringBufferëŠ” ë¬¸ìì—´ì„ ì¶”ê°€í•˜ê±°ë‚˜ ë³€ê²½ í•  ë•Œ ì£¼ë¡œ ì‚¬ìš©í•˜ëŠ” ìë£Œí˜•ì´ë‹¤. (ìƒˆë¡œìš´ ë°ì´í„°ë¥¼ ë§Œë“œëŠ” ê²ƒì´ ì•„ë‹ˆë¼ ê¸°ì¡´ì˜ ë°ì´í„°ì— ì¶”ê°€í•˜ëŠ” í˜•ì‹)
+//		StringBuffer sb = new StringBuffer("abc"); // StringBufferëŠ” ìƒì„±ì„ í•´ì„œ ì‚¬ìš©
 //		System.out.println(sb);
 //		sb.append("def");
 //		System.out.println(sb);

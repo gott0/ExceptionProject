@@ -1,10 +1,10 @@
 package exceptionProject;
 
-public class ObjectTest { //API °¡¼­ µÑ·¯º¸±â
+public class ObjectTest { //API ê°€ì„œ ë‘˜ëŸ¬ë³´ê¸°
 
 	public static void main(String[] args) {
-		Person p1 = new Person("È«±æµ¿",10);
-		Person p2 = new Person("È«±æµ¿",10);
+		Person p1 = new Person("í™ê¸¸ë™",10);
+		Person p2 = new Person("í™ê¸¸ë™",10);
 
 		System.out.println(p1.hashCode());
 		System.out.println(p2.hashCode());
@@ -13,10 +13,10 @@ public class ObjectTest { //API °¡¼­ µÑ·¯º¸±â
 		System.out.println(p1.toString());
 		System.out.println(p2.toString());
 		
-		if(p1.equals(p2)) { // "È«±æµ¿" == "È«±æµ¿" && 10 == 10
-			System.out.println("°°À½");
+		if(p1.equals(p2)) { // "í™ê¸¸ë™" == "í™ê¸¸ë™" && 10 == 10
+			System.out.println("ê°™ìŒ");
 		}else {
-			System.out.println("´Ù¸§");
+			System.out.println("ë‹¤ë¦„");
 		}
 
 	}
